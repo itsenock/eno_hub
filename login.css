@@ -70,9 +70,9 @@ Main {
     box-shadow: 0 0 5px brown;
 }
 
-#bars {
+ #menuIcon {
     display: none;
-}
+    }
 
 
 /* .category {
