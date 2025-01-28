@@ -149,13 +149,13 @@ function initMenu() {
             navMenu.style.right = '10px';
         }
     });
-    document.addEventListener('click', function(event) {
+    /*document.addEventListener('click', function(event) {
         if (!navMenu.contains(event.target) && !menuIcon.contains(event.target)) {
             navMenu.style.display = 'none';
         }
     });
     navMenu.addEventListener('click', function(event) {
         event.stopPropagation();
-    });
+    });*/
 }
 window.onload = initMenu;
