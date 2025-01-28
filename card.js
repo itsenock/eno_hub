@@ -135,3 +135,27 @@ document.addEventListener('DOMContentLoaded', () => {
     init();
 
 });
+
+function initMenu() {
+    var menuIcon = document.getElementById('menuIcon');
+    var navMenu = document.getElementById('navMenu');
+
+    menuIcon.addEventListener('click', function(event) {
+        event.stopPropagation();
+        if (navMenu.style.display == 'block') {
+            navMenu.style.display = 'none';
+        } else {
+            navMenu.style.display = 'block';
+            navMenu.style.right = '10px';
+        }
+    });
+    document.addEventListener('click', function(event) {
+        if (!navMenu.contains(event.target) && !menuIcon.contains(event.target)) {
+            navMenu.style.display = 'none';
+        }
+    });
+    navMenu.addEventListener('click', function(event) {
+        event.stopPropagation();
+    });
+}
+window.onload = initMenu;
