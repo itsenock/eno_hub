@@ -70,10 +70,12 @@ Main {
     box-shadow: 0 0 5px brown;
 }
 
- #menuIcon {
-    display: none;
-    }
-
+#menuIcon {
+    font-size: 30px;
+    cursor: pointer;
+    right: 20px;
+    position: absolute;
+}
 
 /* .category {
         Margin-bottom: 20px;
@@ -233,4 +235,3 @@ Main {
 }
 
 
-}
